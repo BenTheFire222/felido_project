@@ -40,9 +40,11 @@
 
 <div class="article_cont">
     <div class="article">
-        <p>
-            {{ intro|safe }}
-        </p>
+        {% for art in articles %}
+        <a href="/article">
+            {{ art.attributes.Title }}
+        </a>
+        {%  endfor %}
     </div>
 </div>
 

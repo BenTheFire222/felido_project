@@ -38,6 +38,10 @@ li a:hover {
     display: block;
 }
 
+.sidebar {
+    float: left;
+}
+
 .sideBox {
     overflow: hidden;
     background-color: #d2e2dc;
@@ -65,15 +69,14 @@ a.socmedia:active { color: inherit; text-decoration:none;}
 }
 
 .article_cont {
-    display: flex;
-    justify-content: center;
+    /* put article_cont to the right of .sidebar */
     float: left;
+    margin: 20px;
+    overflow: hidden;
+
 }
 
+
 .article {
-    display: inherit;
-    justify-content: center;
-    text-align: center;
-    float: right;
-    width: 50%;
+
 }
