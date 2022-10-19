@@ -16,14 +16,8 @@ def get_articles():
 
 @app.route('/')
 def index():  # put application's code here
-    return redirect(url_for('article_list'))
-
-
-@app.route('/list')
-def article_list():
     articles = get_articles()
     return templating.render_template('article_list.html', articles=articles['data'])
-
 
 @app.route('/article/<id>')
 def article(id):
