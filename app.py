@@ -21,11 +21,15 @@ def index():  # put application's code here
 
 @app.route('/article/<id>')
 def article(id):
-    response = requests.get("http://192.168.0.174:1337/api/articles/" + id, headers={"Authorization": TOKEN})
+    response = requests.get("http://192.168.0.174:1337/api/articles?populate=*/" + id, headers={"Authorization": TOKEN})
     article = json.loads(response.content)
     attrs = article['data']['attributes']
     return templating.render_template('index.html', attrs=attrs)
 
-
+@app.route('/about')
+@app.route('/events')
+@app.route('/archive')
+def wip():
+    return templating.render_template('wip.html')
 if __name__ == '__main__':
     app.run(host='0.0.0.0')

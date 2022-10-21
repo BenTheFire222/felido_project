@@ -18,6 +18,7 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
+
 /* Change the link color to #111 (black) on hover */
 li a:hover {
     background-color: #111;
@@ -35,6 +36,11 @@ li a:hover {
     right: 0;
     height: auto;
     display: block;
+}
+
+.logo_mobile {
+    height: 100%;
+    width: auto;
 }
 
 
@@ -90,7 +96,6 @@ a.socmedia:active {
 }
 
 
-
 .article {
 
 }
@@ -114,6 +119,7 @@ body {
     flex: 0 0 220px;
 
 }
+
 .sideBox {
     display: inherit;
     flex-direction: column;
@@ -153,8 +159,140 @@ a:active {
     color: #dedede;
 }
 
-@media only screen and (max-width: 37.5em) {
-  .sidebar, .sideBox, .top_image_cont {
-      display: none;
-  }
+.top_header {
+    width: 100%;
+    background: #ffffff;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.hamburger {
+    background: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 45px;
+    padding: 5px 15px 0 15px;
+    color: #999;
+    border: 0;
+    font-size: 1.4em;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    z-index: 10000000000000;
+}
+
+.cross {
+    background: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 7px 15px 0 15px;
+    color: #999;
+    border: 0;
+    font-size: 3em;
+    line-height: 65px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    z-index: 10000000000000;
+}
+
+.menu {
+    z-index: 1000000;
+    font-weight: bold;
+    font-size: 0.8em;
+    width: 100%;
+    background: #f1f1f1;
+    position: absolute;
+    text-align: center;
+    font-size: 12px;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none;
+}
+
+.menu li {
+    display: block;
+    padding: 15px 0 15px 0;
+    border-bottom: #dddddd 1px solid;
+}
+
+.menu li:hover {
+    display: block;
+    background: #ffffff;
+    padding: 15px 0 15px 0;
+    border-bottom: #dddddd 1px solid;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    margin: 0;
+    color: #666;
+}
+
+.menu ul li a:hover {
+    color: #666;
+    text-decoration: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #666;
+}
+
+.menu a:hover {
+    text-decoration: none;
+    color: #666;
+}
+
+.glyphicon-home {
+    color: white;
+    font-size: 1.5em;
+    margin: 0 auto;
+}
+
+header {
+    display: inline-block;
+    font-size: 12px;
+}
+
+span {
+    display: flex;
+    padding-left: 20px;
+}
+
+.article {
+    border: 1px solid #dedede;
+}
+
+.solid_divider {
+    border: 3px solid #dedede;
+}
+
+#felido_heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    .sidebar, .sideBox, .top_image_cont, .navbar {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 999999px) {
+    .menu, .glyphicon-home, .top_header, .hamburger, .cross {
+        display: none;
+    }
 }

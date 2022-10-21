@@ -1,0 +1,11 @@
+body {
+    background-color: #dedede;
+    color: #1c1c1c;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1c1c1c;
+        color: #dedede;
+    }
+}

@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Félidő</title>
+    <!-- we need this for mobile devices to use the whole screen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Cikkek{% endblock %} -- Félidő</title>
     <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="icon" type="image/x-icon" href="../static/images/logokicsi.png">
 </head>
 <body>
 <div class="top_image_cont">
@@ -15,10 +18,35 @@
 
 <div class="navbar">
     <ul>
-        <li><a href="/list">Bejegyzések</a></li>
-        <li><a href="events.html">Események</a></li>
-        <li><a href="archive.html">Archívum</a></li>
-        <li><a href="about.html">Rólunk</a></li>
+        <li><a href="/">Bejegyzések</a></li>
+        <li><a href="/events">Események</a></li>
+        <li><a href="/archive">Archívum</a></li>
+        <li><a href="/about">Rólunk</a></li>
+    </ul>
+</div>
+
+
+<header class="top_header">
+    <img src="../static/images/FelidoLogo.jpg" class="logo_mobile">
+    <h1>henlo</h1>
+    <button class="hamburger">&#9776;</button>
+    <button class="cross">&#735;</button>
+</header>
+
+<div class="menu">
+    <ul>
+        <a href="/">
+            <li>Bejegyzések</li>
+        </a>
+        <a href="/events">
+            <li>Események</li>
+        </a>
+        <a href="/archive">
+            <li>Archívum</li>
+        </a>
+        <a href="/about">
+            <li>Rólunk</li>
+        </a>
     </ul>
 </div>
 
@@ -48,24 +76,29 @@
         </div>
     </div>
 
-    <div class="article_cont">
-        {% for art in articles %}
-            <div class="article">
+    {% block content %}
+        <div class="article_cont">
+            {% for art in articles %}
+                <div class="article">
 
 
-                <p>
-                    <a href="/article/{{ art.id }}">
-                        {{ art.attributes.Title }}
+                    <p>
+                        <a href="/article/{{ art.id }}">
+                    <h2>{{ art.attributes.Title }}</h2>
+                    <hr class="solid_divider">
+                    <img src="{{ art.attributes.Image }}" alt="placeholder" width="100%" height="auto">
                     </a>
-                </p>
+                    </p>
 
 
-            </div>
-        {% endfor %}
-    </div>
-</div>
+                </div>
+            {% endfor %}
+        </div>
+        </div>
 
+        <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="../static/scripts/hamburger.js"></script>
 
-
+    {% endblock %}
 </body>
 </html>

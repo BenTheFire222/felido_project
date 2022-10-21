@@ -1,56 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Félidő</title>
-    <link rel="stylesheet" href="../static/css/style.css">
-    <link rel="icon" type="image/x-icon" href="../static/images/FelidoLogo.jpg">
-</head>
-<body>
-<div class="top_image_cont">
-    <a href="/list">
-        <img src="../static/images/placeholder.png" alt="placeholder" width="100%" height="5%">
-        <img class="logo" src="../static/images/FelidoLogo.jpg" alt="logo">
-    </a>
-</div>
-<div class="navbar">
-<ul>
-    <li><a href="events.html">Események</a></li>
-    <li><a href="archive.html">Archívum</a></li>
-    <li><a href="about.html">Rólunk</a></li>
-</ul>
-</div>
+{% extends "article_list.html" %}
 
-<div class="sidebar">
-    <div class="sideBox">
-        <a href="https://www.facebook.com/profile.php?id=100086869088548" target="_blank"><h1 class="socmedia"><img
-                src="../static/images/2021_Facebook_icon.svg" width="auto" height="20" alt="facebook logo">&nbsp;facebook
-        </h1></a>
-        <a href="https://www.instagram.com/felidomusic" target="_blank"><h1 class="socmedia"><img
-                src="../static/images/Instagram_logo_2016.svg" width="auto" height="20" alt="instagram logo">&nbsp;instagram
-        </h1></a>
-        <a href="https://www.youtube.com/channel/UCWse5lxmUzp29nzuAcHT-Bg"><h1 class="socmedia"><img src="../static/images/YouTube_full-color_icon_(2017).svg" width="auto" height="20"
-                                  alt="youtube logo">&nbsp;youtube</h1></a>
-        <a href="https://open.spotify.com/user/31po7zy2szyqgtmsuirxrj7e3rgu"><h1 class="socmedia"><img src="../static/images/Spotify_logo_without_text.svg" width="auto" height="20"
-                                  alt="spotify logo">&nbsp;spotify</h1></a>
-    </div>
-    <div class="sideBox">
-        <iframe width="220" height="220" src="https://www.youtube.com/embed/yLNpy62jIFk" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-    </div>
+{% block title %}{{ attrs.Title }}{% endblock %}
+
+{% block content %}
     <div class="article_cont">
-        <div class="article">
+        <div class="article_content">
             <h1>{{ attrs.Title|safe }}</h1>
             <p>
                 {{ attrs.Content|safe }}
             </p>
+            <img src="{{ attrs.Image }}">{{ attrs.Image|safe }}
         </div>
     </div>
-
-</div>
-
-
-</body>
-</html>
+{% endblock %}
