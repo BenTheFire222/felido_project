@@ -1,0 +1,55 @@
+Date : 2022-10-24 18:22:48
+Directory : /home/sam/PycharmProjects/felido_project
+Total : 20 files,  560 codes, 4 comments, 91 blanks, all 655 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| CSS        |          2 |        265 |          2 |         56 |        323 |
+| HTML       |          6 |        165 |          2 |         17 |        184 |
+| XML        |         10 |         87 |          0 |          2 |         89 |
+| Python     |          1 |         27 |          0 |         13 |         40 |
+| JavaScript |          1 |         16 |          0 |          3 |         19 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                      | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                         |         20 |        560 |          4 |         91 |        655 |
+| .idea                                                                                     |          6 |         53 |          0 |          0 |         53 |
+| .idea/inspectionProfiles                                                                  |          1 |          6 |          0 |          0 |          6 |
+| static                                                                                    |          7 |        315 |          2 |         61 |        378 |
+| static/css                                                                                |          2 |        265 |          2 |         56 |        323 |
+| static/images                                                                             |          4 |         34 |          0 |          2 |         36 |
+| static/scripts                                                                            |          1 |         16 |          0 |          3 |         19 |
+| templates                                                                                 |          6 |        165 |          2 |         17 |        184 |
++-------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                  | language   | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| /home/sam/PycharmProjects/felido_project/.idea/felido_project.iml                         | XML        |         23 |          0 |          0 |         23 |
+| /home/sam/PycharmProjects/felido_project/.idea/inspectionProfiles/profiles_settings.xml   | XML        |          6 |          0 |          0 |          6 |
+| /home/sam/PycharmProjects/felido_project/.idea/jsLibraryMappings.xml                      | XML        |          6 |          0 |          0 |          6 |
+| /home/sam/PycharmProjects/felido_project/.idea/misc.xml                                   | XML        |          4 |          0 |          0 |          4 |
+| /home/sam/PycharmProjects/felido_project/.idea/modules.xml                                | XML        |          8 |          0 |          0 |          8 |
+| /home/sam/PycharmProjects/felido_project/.idea/vcs.xml                                    | XML        |          6 |          0 |          0 |          6 |
+| /home/sam/PycharmProjects/felido_project/app.py                                           | Python     |         27 |          0 |         13 |         40 |
+| /home/sam/PycharmProjects/felido_project/static/css/style.css                             | CSS        |        255 |          2 |         55 |        312 |
+| /home/sam/PycharmProjects/felido_project/static/css/wip.css                               | CSS        |         10 |          0 |          1 |         11 |
+| /home/sam/PycharmProjects/felido_project/static/images/2021_Facebook_icon.svg             | XML        |          8 |          0 |          0 |          8 |
+| /home/sam/PycharmProjects/felido_project/static/images/Instagram_logo_2016.svg            | XML        |         21 |          0 |          0 |         21 |
+| /home/sam/PycharmProjects/felido_project/static/images/Spotify_logo_without_text.svg      | XML        |          4 |          0 |          1 |          5 |
+| /home/sam/PycharmProjects/felido_project/static/images/YouTube_full-color_icon_(2017).svg | XML        |          1 |          0 |          1 |          2 |
+| /home/sam/PycharmProjects/felido_project/static/scripts/hamburger.js                      | JavaScript |         16 |          0 |          3 |         19 |
+| /home/sam/PycharmProjects/felido_project/templates/about.html                             | HTML       |         16 |          0 |          0 |         16 |
+| /home/sam/PycharmProjects/felido_project/templates/archive.html                           | HTML       |         16 |          1 |          1 |         18 |
+| /home/sam/PycharmProjects/felido_project/templates/article_list.html                      | HTML       |         91 |          1 |         12 |        104 |
+| /home/sam/PycharmProjects/felido_project/templates/events.html                            | HTML       |         16 |          0 |          1 |         17 |
+| /home/sam/PycharmProjects/felido_project/templates/index.html                             | HTML       |         13 |          0 |          2 |         15 |
+| /home/sam/PycharmProjects/felido_project/templates/wip.html                               | HTML       |         13 |          0 |          1 |         14 |
+| Total                                                                                     |            |        560 |          4 |         91 |        655 |
++-------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

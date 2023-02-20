@@ -9,7 +9,7 @@ TOKEN = "Bearer b0ab3b7c240759687eaac840a07b8ad7b56ad475d8c7ecd995647a3c33cb6065
 
 
 def get_articles():
-    response = requests.get("http://192.168.0.174:1337/api/articles", headers={
+    response = requests.get("http://192.168.0.174:1337/api/articles?populate=*/", headers={
         "Authorization": TOKEN})
     return json.loads(response.content)
 
@@ -19,17 +19,18 @@ def index():  # put application's code here
     articles = get_articles()
     return templating.render_template('article_list.html', articles=articles['data'])
 
+
 @app.route('/article/<id>')
 def article(id):
-    response = requests.get("http://192.168.0.174:1337/api/articles?populate=*/" + id, headers={"Authorization": TOKEN})
+    response = requests.get(f"http://192.168.0.174:1337/api/articles/{id}?populate=*", headers={"Authorization": TOKEN})
     article = json.loads(response.content)
     attrs = article['data']['attributes']
     return templating.render_template('index.html', attrs=attrs)
+
 
 @app.route('/about')
 @app.route('/events')
 @app.route('/archive')
 def wip():
     return templating.render_template('wip.html')
-if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+

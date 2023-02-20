@@ -26,12 +26,13 @@
 </div>
 
 
-<header class="top_header">
+<div class="top_header">
     <img src="../static/images/FelidoLogo.jpg" class="logo_mobile">
     <h1>henlo</h1>
+    <script src="https://kit.fontawesome.com/05e6d7b951.js" crossorigin="anonymous"></script>
     <button class="hamburger">&#9776;</button>
     <button class="cross">&#735;</button>
-</header>
+</div>
 
 <div class="menu">
     <ul>
@@ -84,12 +85,11 @@
 
                     <p>
                         <a href="/article/{{ art.id }}">
-                    <h2>{{ art.attributes.Title }}</h2>
-                    <hr class="solid_divider">
-                    <img src="{{ art.attributes.Image }}" alt="placeholder" width="100%" height="auto">
-                    </a>
+                            <h2>{{ art.attributes.Title }}</h2>
+                            <hr class="solid_divider">
+                            {{ art.attributes.Short | safe }}
+                        </a>
                     </p>
-
 
                 </div>
             {% endfor %}
